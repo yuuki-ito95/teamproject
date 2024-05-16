@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+/*検索*/
+.search__wrapper {
+	max-width: 60%;
+	margin: 0 auto;
+	padding: 10px 30px;
+	margin-bottom: 20px;
+	border: 1px #000 solid;
+}
+
+.search__wrapper button {
+	margin-left: 20px;
+	width: 70px;
+}
+
+/*勤怠情報テーブル*/
+.wt-table {
+	width: 100%;
+}

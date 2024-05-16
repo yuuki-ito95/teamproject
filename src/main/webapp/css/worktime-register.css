@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.register__wrapper {
+	display: flex;
+	max-width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px #000 solid;
+}
+
+.register__work {
+	width: 50%;
+}
+
+.register__work label {
+	margin-right: 5px;
+}
+
+.register__other {
+	width: 50%;
+}
+
+.register__other label {
+	margin-right: 5px;
+}
+
+.register__post:nth-child(odd) {
+	margin-bottom: 10px;
+}
+
+.register__btn {
+	width: 100px;
+	height: 30px;
+}

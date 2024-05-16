@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.menu__wrapper {
+	max-width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.menu__contents {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 30px;
+	border: 1px #000 solid;
+}
+
+.menu__button button {
+	width: 100px;
+	height: 30px;
+}
+
+.logout {
+	text-align: right;
+}
+
+.logout button {
+	width: 100px;
+	height: 30px;
+}

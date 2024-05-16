@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.ot__table {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.ot__list {
+	width: 70%;
+}
+
+.ot__about {
+	width: 30%;
+}
+
+.ot__about h4 {
+	margin: 0;
+	padding: 5px;
+	border: 1px #000 solid;
+	background-color: #1111;
+}
+
+.ot__about p {
+	margin: 0;
+	padding: 20px;
+	border: 1px #000 solid;
+}

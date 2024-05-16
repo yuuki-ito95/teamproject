@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.edit__wrapper {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.edit__contant {
+	display: flex;
+}
+
+.edit__contant p {
+	margin: 0;
+	padding: 10px;
+	width: 30%;
+	border: 1px #000 solid;
+	background-color: #1111;
+}
+
+.edit__post {
+	width: 70%;
+	padding: 10px;
+	border: 1px #000 solid;
+}
+
+.edit__btn {
+	width: 100px;
+	height: 30px;
+}

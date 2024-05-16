@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header__menu {
+	max-width: 60%;
+	text-align: right;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.header__menu a {
+	display: block;
+	text-align: center;
+	width: 100px;
+	color: black;
+	text-decoration: none;
+}
+
+.wt-wrapper {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.list__title {
+	background-color: #1111;
+}
+
+.list__title tr th {
+	border: 1px #000 solid;
+}
+
+.list__about tr th {
+	border: 1px #000 solid;
+}

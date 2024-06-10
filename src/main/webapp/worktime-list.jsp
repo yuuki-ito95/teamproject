@@ -15,11 +15,8 @@ List<WorktimeBean> worktimeList = (List) request.getAttribute("worktimeList");
 </head>
 <body>
 	<div class="container">
-		<h1>勤怠一覧</h1>
-		<div class="header__menu">
-			<button>
-				<a href="menu.jsp">メニュー</a>
-			</button>
+		<div class="header">
+			<%@ include file="menu.jsp"%>
 		</div>
 		<div class="search__wrapper">
 			<form action="worktime-search" method="post">
@@ -105,7 +102,7 @@ List<WorktimeBean> worktimeList = (List) request.getAttribute("worktimeList");
 						<th><%=wt.getBreakTime()%></th>
 						<th><%=wt.getOverTime()%></th>
 						<th>
-							<form action="worktime-edit" method="get">
+							<form action="worktime-edit" method="post">
 								<input type="hidden" name="id" value="<%=wt.getId()%>">
 								<button type="submit">編集</button>
 							</form>

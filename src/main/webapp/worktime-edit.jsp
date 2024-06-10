@@ -1,8 +1,9 @@
+<%@ page import="javax.servlet.http.HttpSession"%>
 <%@ page import="model.entity.WorktimeBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-WorktimeBean wtBean = (WorktimeBean) request.getAttribute("wtBean");
+WorktimeBean wtBean = (WorktimeBean) session.getAttribute("wtBean");
 %>
 <!DOCTYPE html>
 <html>
@@ -14,16 +15,13 @@ WorktimeBean wtBean = (WorktimeBean) request.getAttribute("wtBean");
 </head>
 <body>
 	<div class="container">
-		<h1>勤怠編集</h1>
-		<div class="header__menu">
-			<button>
-				<a href="worktime-list">戻る</a>
-			</button>
-			<button>
-				<a href="menu.jsp">メニュー</a>
-			</button>
+		<div class="header">
+			<%@ include file="menu.jsp"%>
 		</div>
-		<form action="worktime-edit" method="post">
+		<div class="back">
+			<a href="worktime-list">戻る</a>
+		</div>
+		<form action="worktime-update" method="post">
 			<div class="edit__wrapper">
 				<div class="edit__contant">
 					<p>日付</p>
@@ -35,28 +33,28 @@ WorktimeBean wtBean = (WorktimeBean) request.getAttribute("wtBean");
 					<p>始業時間</p>
 					<div class="edit__post">
 						<label><%=wtBean.getWorkIn()%> →</label> <input type="time"
-							name="workIn" size="10">
+							name="workIn" size="15">
 					</div>
 				</div>
 				<div class="edit__contant">
 					<p>就業時間</p>
 					<div class="edit__post">
 						<label><%=wtBean.getWorkOut()%> →</label> <input type="time"
-							name="workOut" size="10">
+							name="workOut" size="15">
 					</div>
 				</div>
 				<div class="edit__contant">
 					<p>休憩時間</p>
 					<div class="edit__post">
 						<label><%=wtBean.getBreakTime()%> →</label> <input type="time"
-							name="breakTime" size="10">
+							name="breakTime" size="15">
 					</div>
 				</div>
 				<div class="edit__contant">
 					<p>残業時間</p>
 					<div class="edit__post">
 						<label><%=wtBean.getOverTime()%> →</label> <input type="time"
-							name="overTime" size="10">
+							name="overTime" size="15">
 					</div>
 				</div>
 			</div>

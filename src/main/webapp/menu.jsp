@@ -10,9 +10,16 @@
 </head>
 <body>
 	<div class="container">
-		<h1>メニュー</h1>
+		<div class="title">
+			<h1>勤怠管理SYSTEM</h1>
+		</div>
 		<div class="menu__wrapper">
 			<div class="menu__contents">
+				<div class="menu__button">
+					<form action="my-page" method="get">
+						<button type="submit">MY PAGE</button>
+					</form>
+				</div>
 				<div class="menu__button">
 					<form action="worktime-list" method="get">
 						<button type="submit">一覧</button>
@@ -28,11 +35,11 @@
 						<button type="submit">残業管理</button>
 					</form>
 				</div>
-			</div>
-			<div class="logout">
-				<form action="logout" method="get">
-					<button type="submit">ログアウト</button>
-				</form>
+				<div class="menu__button">
+					<form action="logout" method="get">
+						<button type="submit">ログアウト</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

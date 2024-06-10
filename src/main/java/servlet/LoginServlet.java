@@ -57,22 +57,16 @@ public class LoginServlet extends HttpServlet {
 		if (lb != null && postUserId.equals(lb.getUserId()) && postPassword.equals(lb.getPassword())) {
 
 			HttpSession session = request.getSession();
-			session.setAttribute("userId", postUserId);
-			url = "menu.jsp";
-
-			System.out.println("a");
+			session.setAttribute("userInfo", lb);
+			url = "my-page";
 		} else {
 
 			//認証失敗時の処理
 			request.setAttribute("errorMessage", "ユーザーIDまたはパスワードが間違っています。");
 			url = "login.jsp";
-
-			System.out.println("b");
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(url);
 		rd.forward(request, response);
-		
-		System.out.println("c");
 	}
 }

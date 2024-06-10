@@ -6,6 +6,10 @@
 	margin-bottom: 20px;
 }
 
+.back {
+	text-align: left;
+}
+
 .edit__contant {
 	display: flex;
 }

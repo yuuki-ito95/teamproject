@@ -19,11 +19,8 @@ String totalOverTime = (String) request.getAttribute("totalOverTime");
 </head>
 <body>
 	<div class="container">
-		<h1>残業管理</h1>
-		<div class="header__menu">
-			<button>
-				<a href="menu.jsp">メニュー</a>
-			</button>
+		<div class="header">
+			<%@ include file="menu.jsp"%>
 		</div>
 		<div class="wt-wrapper">
 			<div class="ot__list">

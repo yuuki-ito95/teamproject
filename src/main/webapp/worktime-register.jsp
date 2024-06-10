@@ -10,11 +10,8 @@
 </head>
 <body>
 	<div class="container">
-		<h1>勤怠登録</h1>
-		<div class="header__menu">
-			<button>
-				<a href="menu.jsp">メニュー</a>
-			</button>
+		<div class="header">
+			<%@ include file="menu.jsp"%>
 		</div>
 		<form action="worktime-register" method="post">
 			<div class="register__wrapper">
